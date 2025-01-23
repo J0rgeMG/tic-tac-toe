@@ -35,16 +35,32 @@ header{
     align-self: center;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
 }
 
-.player-show{
+.player-card-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 0.4rem;
+    padding-bottom: 1.1rem;
+}
+.player-card-list li{
+    margin: 0.5rem;
+}
+
+.player-card{
     background-color: var(--color-purple-300);
+    border-radius: 3px;
+    text-align: center;
+    padding: 2rem auto;
+    width: 45%;
 }
 
-.player-show h2{
+.player-card h2{
     font-size: 0.8rem;
+    margin: 0;
 }
 
 .player-name{
@@ -57,4 +73,11 @@ header{
 .player-icon{
     font-weight: bolder;
     font-size: 1.3rem;
+}
+
+.player-edit-name{
+    text-decoration: none;
+
+    font-size: 0.9rem;
+    color: var(--color-purple-500);
 }
