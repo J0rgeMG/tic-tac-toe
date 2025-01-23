@@ -1,23 +1,42 @@
 body{
     --color-purple-100: rgb(237, 206, 246);
+    --color-purple-300: rgb(202, 169, 211);
     --color-purple-500: rgb(126, 51, 147);
 
     background-color: var(--color-purple-100);
+
+    margin: 0;
 }
 
 header{
     background-color: var(--color-purple-500);
     color: white;
 
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     left: 0;
     top: 0;
 
     text-align: center;
     font-family: sans-serif;
+
+    overflow: hidden;
 }
 
 #title-card{
     margin: 3rem auto;
+}
+
+#name-selector-show{
+    width: 50%;
+    margin: 3rem auto;
+    align-self: center;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.player-show{
+    background-color: var(--color-purple-300);
 }
