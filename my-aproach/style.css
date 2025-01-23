@@ -31,7 +31,7 @@ header{
 
 #name-selector-show{
     width: 50%;
-    margin: 3rem auto;
+    margin: 3rem auto 0.7rem auto;
     align-self: center;
 
     display: flex;
@@ -80,4 +80,28 @@ header{
 
     font-size: 0.9rem;
     color: var(--color-purple-500);
+}
+
+#button-section{
+    display: block;
+    text-align: center;
+}
+
+#new-game-button{
+    margin: 0.1rem auto;
+    padding: 0.5rem 1.5rem;
+
+    background-color: var(--color-purple-600);
+    color: white;
+
+    border: 0 solid var(--color-purple-600);
+    border-radius: 4px;
+
+    font: inherit;
+    font-size: 0.9rem;
+}
+
+#new-game-button:hover{
+    cursor: pointer;
+    background-color: var(--color-purple-500);
 }
