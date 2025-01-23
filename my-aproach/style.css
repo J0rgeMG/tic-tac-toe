@@ -2,8 +2,11 @@ body{
     --color-purple-100: rgb(237, 206, 246);
     --color-purple-300: rgb(202, 169, 211);
     --color-purple-500: rgb(126, 51, 147);
+    --color-purple-600: rgb(91, 32, 107);
 
     background-color: var(--color-purple-100);
+
+    font-family: sans-serif;
 
     margin: 0;
 }
@@ -18,7 +21,6 @@ header{
     top: 0;
 
     text-align: center;
-    font-family: sans-serif;
 
     overflow: hidden;
 }
@@ -39,4 +41,20 @@ header{
 
 .player-show{
     background-color: var(--color-purple-300);
+}
+
+.player-show h2{
+    font-size: 0.8rem;
+}
+
+.player-name{
+    color: var(--color-purple-600);
+
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.player-icon{
+    font-weight: bolder;
+    font-size: 1.3rem;
 }
