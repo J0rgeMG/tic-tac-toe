@@ -105,3 +105,35 @@ header{
     cursor: pointer;
     background-color: var(--color-purple-500);
 }
+
+#game-board-section{
+    margin: 1rem auto;
+    
+    width: 40rem;
+    height: 40rem;
+}
+
+#game-board{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    list-style: none;
+    background-color: var(--color-purple-300);
+
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+#game-board li{
+    text-align: center;
+    padding: 2rem;
+    margin: 0;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.selected{
+    background-color: var(--color-purple-500);
+}
