@@ -1,17 +1,25 @@
 const newGameButtonElement = document.getElementById("new-game-button");
+let player1Turn = true;
+let playerSymbol = "X";
+let gameOver = false;
+
+function squareChosen() {
+    if (player1Turn){
+        EventTarget.innerHTML = playerSymbol;
+        EventTarget.classList.add("selected");
+        playerSymbol = "O"
+        player1Turn = false;
+    } else {
+        EventTarget.innerHTML = playerSymbol;
+        EventTarget.classList.add("selected");
+        playerSymbol = "X"
+        player1Turn = true;
+    }
+}
 
 function startGame(boardArray){
-    let gameOver = false;
-    let player1Turn = true;
-    let playerSymbol = "X";
-
-    while(!gameOver){
-        if(player1Turn){
-
-        }else{
-
-        }
-
+    for (square of boardArray) {
+        square.addEventListener("click", squareChosen);
     }
 }
 
