@@ -50,6 +50,6 @@ body{
     border-color: rgb(79, 10, 190);
 }
 
-.btn-alt{
+.btn-alt:hover{
     background-color: rgb(245, 232, 255);
 }
