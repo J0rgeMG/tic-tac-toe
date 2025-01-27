@@ -24,6 +24,20 @@
     display: none;
 }
 
+#backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    /* we take the full page */
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.7);
+
+    display: none;
+}
+
 /* Bigger screens than a phone */
 @media (min-width: 48rem) {
     .modal{

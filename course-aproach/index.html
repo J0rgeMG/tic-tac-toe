@@ -12,19 +12,22 @@
     <!-- CSS styles -->
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/overlays.css">
+    <link rel="stylesheet" href="styles/configuration.css">
 
     <title>Tic Tac Toe</title>
 </head>
 <body>
+    <!-- backdrop for the modal -->
+    <div id="backdrop"></div>
     <header id="main-header">
         <h1>Play Tic, Tac, Toe</h1>
         <p>Built with HTML, CSS, JavaScript and - of course - lots of love!</p>
     </header>
     <main>
-        <aside class="modal">
+        <aside class="modal" id="config-overlay">
             <h2>Choose your name</h2>
             <form>
-                <div>
+                <div class="form-control">
                     <label for="playername">Player name</label>
                     <input type="text" name="playername" id="playername">
                 </div>
