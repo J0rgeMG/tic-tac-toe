@@ -1,0 +1,10 @@
+body{
+    /* Deletes the default margin browsers have */
+    margin: 0; 
+    
+    /* Text settings */
+    font-family: 'Open-Sans', sans-serif;
+    color: rgb(44, 41, 44);
+
+    background-color: rgb(247, 239 , 247);
+}
