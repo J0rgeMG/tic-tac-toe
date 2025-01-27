@@ -27,5 +27,51 @@
 
 #active-player-name {
     font-weight: bold;
+
     color: rgb(50, 5, 87);
+}
+
+#game-board {
+    list-style: none;
+
+    margin: 1rem 0;
+    padding: 0;
+
+    /* creates a square grid */
+    display: grid;
+    /* same as writting 6rem 6rem 6rem */
+    grid-template-columns: repeat(3, 6rem); 
+    grid-template-rows: repeat(3, 6rem);
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+#game-board li {
+    background-color: rgb(215, 187, 247);
+
+    border-radius: 2px;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#game-board li:hover{
+    background-color: rgb(112, 13, 204);
+}
+
+#game-board li.disabled{
+    background-color: rgb(112, 13, 204);
+    color: white;
+    
+    cursor: default;
+}
+
+#game-board li.disabled:hover{
+    background-color: rgb(112, 13, 204);
 }
