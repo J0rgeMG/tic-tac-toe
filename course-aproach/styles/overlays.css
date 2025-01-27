@@ -1,0 +1,35 @@
+.modal {
+    /* Position settings */
+    /* positions the overlay on top of everything */
+    position: fixed;
+    /* after ussing position fixed is neccesary 
+    to use top and left to tell the browser where 
+    to position the element */
+    top: 20%;
+    left: 5%;
+    padding: 1rem;
+
+    /* Size */
+    width: 90%;
+
+    /* Color */
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+
+    /* Border */
+    border-radius: 6px;
+
+    /* Makes the element not visible 
+    when loading the page */
+    display: none;
+}
+
+/* Bigger screens than a phone */
+@media (min-width: 48rem) {
+    .modal{
+        /* Position settings */
+        /* we calculate the center of the screen */
+        left: calc(50% - 20rem);
+        width: 40rem;
+    }
+}
