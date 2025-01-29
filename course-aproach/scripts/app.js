@@ -26,7 +26,9 @@ const startNewGameBtnElement = document.getElementById("start-game-btn");
 
 // Game board elements
 const gameAreaElement = document.getElementById("active-game");
-const gameFieldElements = document.querySelectorAll("#game-board li");
+// const gameFieldElements = document.querySelectorAll("#game-board li");
+const gameBoardElement = document.getElementById("game-board");
+const activePlayerNameElement = document.getElementById("active-player-name");
 
 
 editPlayer1BtnElement.addEventListener("click", openPlayerConfig);
@@ -39,6 +41,7 @@ formElement.addEventListener("submit", savePlayerConfig);
 
 startNewGameBtnElement.addEventListener("click", startNewGame);
 
-for(const gameFieldElement of gameFieldElements) {
-    gameFieldElement.addEventListener("click", selectGameField);
-}
+// for(const gameFieldElement of gameFieldElements) {
+//     gameFieldElement.addEventListener("click", selectGameField);
+// }
+gameBoardElement.addEventListener("click", selectGameField);
