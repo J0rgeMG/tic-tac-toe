@@ -4,9 +4,11 @@ const gameData= [
     [0, 0, 0],
 ];
 
+// Helper variables
 let editedPlayer = 0;
 let activePlayer = 0;
 let currentRound = 1;
+let gameIsOver = false;
 
 const players = [
     {
@@ -36,6 +38,7 @@ const gameAreaElement = document.getElementById("active-game");
 // const gameFieldElements = document.querySelectorAll("#game-board li");
 const gameBoardElement = document.getElementById("game-board");
 const activePlayerNameElement = document.getElementById("active-player-name");
+const gameOverElement = document.getElementById("game-over");
 
 
 editPlayer1BtnElement.addEventListener("click", openPlayerConfig);
